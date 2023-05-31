@@ -1,8 +1,11 @@
 package library;
 
+import java.util.ArrayList;
+
 public class Member {
 	String name;
 	int memberNum;
+	ArrayList<Member> memberList = new ArrayList<Member>();
 	
 	public Member(String name, int memberNum) {
 		this.name = name;

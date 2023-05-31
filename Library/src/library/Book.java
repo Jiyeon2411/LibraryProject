@@ -1,8 +1,11 @@
 package library;
 
+import java.util.ArrayList;
+
 public class Book {
 	String title;
 	int bookNum;
+	ArrayList<Book> bookList = new ArrayList<Book>();
 	
 	public Book(String title, int bookNum) {
 		this.title = title;
