@@ -1,5 +1,7 @@
 package library;
 
+import book.Book;
+
 public class Loan {
 	String loanDate;
 	String dueDate;

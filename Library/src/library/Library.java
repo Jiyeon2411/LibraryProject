@@ -2,6 +2,8 @@ package library;
 
 import java.util.*;
 
+import book.Book;
+
 public class Library {
 	//library 객체 생성
 	private static Library instance = new Library();
