@@ -1,32 +1,19 @@
 package library;
 
-import java.util.ArrayList;
-
 public class Member {
-	String name;
-	int memberNum;
-	ArrayList<Member> memberList = new ArrayList<Member>();
-	
-	public Member(String name, int memberNum) {
-		this.name = name;
-		this.memberNum = memberNum;
-	}
+    private String name;
+    private int memberNum;
 
-	public String getName() {
-		return name;
-	}
+    public Member(String name, int memberNum) {
+        this.name = name;
+        this.memberNum = memberNum;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public int getMemberNum() {
-		return memberNum;
-	}
-
-	public void setMemberNum(int memberNum) {
-		this.memberNum = memberNum;
-	}
-	
-	
+    public int getMemberNum() {
+        return memberNum;
+    }
 }
