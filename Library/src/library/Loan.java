@@ -1,50 +1,50 @@
 package library;
 
 import book.Book;
+import library.Member;
 
 public class Loan {
-	String loanDate;
-	String dueDate;
-	Book borrowedBook;
-	Member member;
-	
-	public Loan(String loanDate, String dueDate, Book borrowedBook, Member member) {
-		this.loanDate = loanDate;
-		this.dueDate = dueDate;
-		this.borrowedBook = borrowedBook;
-		this.member = member;
-	}
+    private String loanDate;
+    private String dueDate;
+    private Book borrowedBook;
+    private Member member;
 
-	public String getLoanDate() {
-		return loanDate;
-	}
+    public Loan(String loanDate, String dueDate, Book borrowedBook, Member member) {
+        this.loanDate = loanDate;
+        this.dueDate = dueDate;
+        this.borrowedBook = borrowedBook;
+        this.member = member;
+    }
 
-	public void setLoanDate(String loanDate) {
-		this.loanDate = loanDate;
-	}
+    public String getLoanDate() {
+        return loanDate;
+    }
 
-	public String getDueDate() {
-		return dueDate;
-	}
+    public void setLoanDate(String loanDate) {
+        this.loanDate = loanDate;
+    }
 
-	public void setDueDate(String dueDate) {
-		this.dueDate = dueDate;
-	}
+    public String getDueDate() {
+        return dueDate;
+    }
 
-	public Book getBorrowedBook() {
-		return borrowedBook;
-	}
+    public void setDueDate(String dueDate) {
+        this.dueDate = dueDate;
+    }
 
-	public void setBorrowedBook(Book borrowedBook) {
-		this.borrowedBook = borrowedBook;
-	}
+    public Book getBorrowedBook() {
+        return borrowedBook;
+    }
 
-	public Member getMember() {
-		return member;
-	}
+    public void setBorrowedBook(Book borrowedBook) {
+        this.borrowedBook = borrowedBook;
+    }
 
-	public void setMember(Member member) {
-		this.member = member;
-	}
-	
+    public Member getMember() {
+        return member;
+    }
+
+    public void setMember(Member member) {
+        this.member = member;
+    }
 }
