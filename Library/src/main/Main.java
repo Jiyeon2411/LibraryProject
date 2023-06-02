@@ -1,24 +1,33 @@
 package main;
 
+import java.util.*;
+import java.time.*;
 import library.Library;
 import book.Book;
 import library.Member;
 import loan.LoanManager;
 
-import java.util.Scanner;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 
 public class Main {
     private static Library incheonlib = Library.getInstance();
     private static LoanManager loanManager = new LoanManager();
     private static Scanner scanner = new Scanner(System.in);
+	private static DateFormat df;
+	private static Date date;
 
     public static void main(String[] args) {
         boolean run = true;
 
+        Date date = new Date();
+        SimpleDateFormat df = new SimpleDateFormat("MM/dd");
+        
+        
         while (run) {
-            System.out.println("-----------------------------------------------------");
+            System.out.println("------------------------------------------------------------");
             System.out.println("1. 도서 등록 | 2. 회원 등록 | 3. 도서 대출 | 4. 도서 반납 | 5. 대출 조회");
-            System.out.println("-----------------------------------------------------");
+            System.out.println("------------------------------------------------------------");
             System.out.print("선택> ");
             int num = scanner.nextInt();
 
@@ -98,7 +107,8 @@ public class Main {
 
         incheonlib.borrowBook(book, member);
         
-        System.out.println("도서가 대출되었습니다.");
+        System.out.println(df.format(date) + "도서가 대출되었습니다. 반납 기한은 ");
+        
     }
 
     private static void returnBook() {
